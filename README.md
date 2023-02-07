@@ -13,10 +13,10 @@ If there is no link for the course name that means I haven't started it yet.
 
 ## 🎮 List of Courses in Career Track
 * 🏁 [Understanding Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering)
-  * 🏁 [Introduction to Python]()
-  * 🏁 [Intermediate Python]()
-  * 🏁 [Introduction to SQL]()
-  * 🏁 [Intermediate SQL]()
+  * 🏁 [Introduction to Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Introduction_to_Python)
+  * 🏁 [Intermediate Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_Python)
+  * 🏁 [Introduction to SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_SQL)
+  * 🏁 [Intermediate SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Introduction_to_SQL)
 * [Introduction to Data Engineering]()
 * [Streamlined Data Ingestion with Pandas]()
 * [Writing Efficient Python Code]()

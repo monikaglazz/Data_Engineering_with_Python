@@ -17,7 +17,7 @@ If there is no link for the course name that means I haven't started it yet.
   * 🏁 [Intermediate Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_Python)
   * 🏁 [Introduction to SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_SQL)
   * 🏁 [Intermediate SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Introduction_to_SQL)
-* [Introduction to Data Engineering]()
+* [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
 * [Streamlined Data Ingestion with Pandas]()
 * [Writing Efficient Python Code]()
 * [Writing Functions in Python]()

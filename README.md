@@ -3,7 +3,10 @@
 
 Most of the projects are based on the tasks from the ['Career Track: Data Engineer with Python'](https://www.datacamp.com/tracks/data-engineer-with-python) from www.datacamp.com
 
-Finished courses has a 🏁 flag before the name.
+🏁 - course finished
+
+🔖 - course in progress
+
 If there is no link for the course name that means I haven't started it yet.
 
 ![image](https://user-images.githubusercontent.com/84285130/217212070-2d5affaa-1625-4e45-957f-1ca31098aa4d.png)
@@ -17,7 +20,7 @@ If there is no link for the course name that means I haven't started it yet.
   * 🏁 [Intermediate Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_Python)
   * 🏁 [Introduction to SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_SQL)
   * 🏁 [Intermediate SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Introduction_to_SQL)
-* [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
+* 🔖 [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
 * [Streamlined Data Ingestion with Pandas]()
 * [Writing Efficient Python Code]()
 * [Writing Functions in Python]()

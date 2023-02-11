@@ -20,21 +20,21 @@ If there is no link for the course name that means I haven't started it yet.
   * 🏁 [Intermediate Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_Python)
   * 🏁 [Introduction to SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_SQL)
   * 🏁 [Intermediate SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Introduction_to_SQL)
-* 🔖 [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
-* [Streamlined Data Ingestion with Pandas]()
-* [Writing Efficient Python Code]()
-* [Writing Functions in Python]()
-* [Introduction to Shell]()
-* [Data Processing in Shell]()
-* [Introduction to Bash Scripting]()
-* [Unit Testing for Data Science in Python]()
-* [Object-Oriented Programming with Python]()
-* [Introduction to Airflow in Python]()
-* [Introduction to PySpark]()
-* [Introduction to AWS Boto in Python]()
-* [Introduction to Relational Databases in SQL]()
-* [Database Design]()
-* [Introduction to Scala]()
-* [Big Data Fundamentals with PySpark]()
-* [Clearing Data with PySpark]()
-* [Introduction to MangoDB in Python]()
+* 🏁 [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
+* 🔖 [Streamlined Data Ingestion with Pandas]()
+* Writing Efficient Python Code
+* Writing Functions in Python
+* Introduction to Shell
+* Data Processing in Shell
+* Introduction to Bash Scripting
+* Unit Testing for Data Science in Python
+* Object-Oriented Programming with Python
+* Introduction to Airflow in Python
+* Introduction to PySpark
+* Introduction to AWS Boto in Python
+* Introduction to Relational Databases in SQL
+* Database Design
+* Introduction to Scala
+* Big Data Fundamentals with PySpark
+* Clearing Data with PySpark
+* Introduction to MangoDB in Python

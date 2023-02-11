@@ -38,3 +38,6 @@ If there is no link for the course name that means I haven't started it yet.
 * Big Data Fundamentals with PySpark
 * Clearing Data with PySpark
 * Introduction to MangoDB in Python
+
+## 📈 Projects
+* [Duration of Netflix films](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Projects/netflix_films.py)

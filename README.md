@@ -21,7 +21,7 @@ If there is no link for the course name that means I haven't started it yet.
   * 🏁 [Introduction to SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_SQL)
   * 🏁 [Intermediate SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Introduction_to_SQL)
 * 🏁 [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
-* 🔖 [Streamlined Data Ingestion with Pandas]()
+* 🔖 [Streamlined Data Ingestion with Pandas](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Streamlined%20Data%20Ingestion%20with%20Pandas)
 * Writing Efficient Python Code
 * Writing Functions in Python
 * Introduction to Shell
@@ -41,3 +41,5 @@ If there is no link for the course name that means I haven't started it yet.
 
 ## 📈 Projects
 * [Duration of Netflix films](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Projects/netflix_films.py)
+* [Risk and Returns](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Projects/risk_and_returns.py)
+* [TV data](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Projects/tv_data.py)

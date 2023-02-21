@@ -1,6 +1,8 @@
 # Import reduce from functools
 from functools import reduce
 
+import pandas as pd
+
 # Define echo_word as a lambda function: echo_word
 echo_word = (lambda word1, echo: word1*echo)
 
@@ -97,8 +99,11 @@ def shout_echo2(word1, echo=1):
 # Call shout_echo
 shout_echo2("particle", echo=5)
 
+# Import Twitter data as DataFrame: df
+df = pd.read_csv('tweets.csv')
+
 # Select retweets from the Twitter DataFrame: result
-result = filter(lambda x: x[0:2] == 'RT', tweets_df['text'])
+result = filter(lambda x: x[0:2] == 'RT', df['text'])
 
 # Create list from filter object result: res_list
 res_list = list(result)
@@ -139,7 +144,7 @@ def count_entries(df, col_name='lang'):
 
 
 # Call count_entries(): result1
-result1 = count_entries(tweets_df, 'lang')
+result1 = count_entries(df, 'lang')
 
 # Print result1
 print(result1)

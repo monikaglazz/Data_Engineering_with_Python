@@ -1,3 +1,5 @@
+import pandas as pd
+
 # Create a string: team
 team = "teen titans"
 
@@ -186,11 +188,14 @@ def count_entries(df, *args):
     # Return the cols_count dictionary
     return cols_count
 
+# Import Twitter data as DataFrame: df
+df = pd.read_csv('tweets.csv')
+
 # Call count_entries(): result1
-result1 = count_entries(tweets_df, 'lang')
+result1 = count_entries(df, 'lang')
 
 # Call count_entries(): result2
-result2 = count_entries(tweets_df, 'lang', 'source')
+result2 = count_entries(df, 'lang', 'source')
 
 # Print result1 and result2
 print(result1)

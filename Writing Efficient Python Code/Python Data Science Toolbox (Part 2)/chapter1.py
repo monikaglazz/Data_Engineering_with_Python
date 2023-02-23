@@ -1,5 +1,6 @@
 import pandas as pd
 
+# 1
 # Create a list of strings: flash
 flash = ['jay garrick', 'barry allen', 'wally west', 'bart allen']
 
@@ -7,6 +8,7 @@ flash = ['jay garrick', 'barry allen', 'wally west', 'bart allen']
 for person in flash:
     print(person)
 
+# 2
 
 # Create an iterator for flash: superhero
 superhero = iter(flash)
@@ -17,6 +19,8 @@ print(next(superhero))
 print(next(superhero))
 print(next(superhero))
 
+# 3
+
 # Create an iterator for range(3): small_value
 small_value = iter(range(3))
 
@@ -25,10 +29,13 @@ print(next(small_value))
 print(next(small_value))
 print(next(small_value))
 
+# 4
+
 # Loop over range(3) and print the values
 for num in range(3):
     print(num)
 
+# 5
 
 # Create an iterator for range(10 ** 100): googol
 googol = iter(range(10**100))
@@ -40,12 +47,15 @@ print(next(googol))
 print(next(googol))
 print(next(googol))
 
+# 6
 
 # Create a range object: values
 values = range(10, 21)
 
 # Print the range object
 print(values)
+
+# 7
 
 # Create a list of integers: values_list
 values_list = list(values)
@@ -59,6 +69,7 @@ values_sum = sum(values)
 # Print values_sum
 print(values_sum)
 
+# 8
 
 # Create a list of strings: mutants
 mutants = ['charles xavier',
@@ -73,14 +84,19 @@ mutant_list = list(enumerate(mutants))
 # Print the list of tuples
 print(mutant_list)
 
+# 9
+
 # Unpack and print the tuple pairs
 for index1, value1 in enumerate(mutants):
     print(index1, value1)
+
+# 10
 
 # Change the start index
 for index2, value2 in enumerate(mutants, start=1):
     print(index2, value2)
 
+# 11
 
 aliases = ['prof x', 'iceman', 'nightcrawler', 'magneto', 'shadowcat']
 powers = ['telepathy', 'thermokinesis',
@@ -93,16 +109,21 @@ mutant_data = list(zip(mutants, aliases, powers))
 # Print the list of tuples
 print(mutant_data)
 
+# 12
+
 # Create a zip object using the three lists: mutant_zip
 mutant_zip = zip(mutants, aliases, powers)
 
 # Print the zip object
 print(mutant_zip)
 
+# 13
+
 # Unpack the zip object and print the tuple values
 for value1, value2, value3 in mutant_zip:
     print(value1, value2, value3)
 
+# 14
 
 # Create a zip object from mutants and powers: z1
 z1 = zip(mutants, powers)
@@ -120,6 +141,8 @@ result1, result2 = zip(*z1)
 print(result1 == mutants)
 print(result2 == powers)
 
+# 15
+
 # Initialize an empty dictionary: counts_dict
 counts_dict = {}
 
@@ -136,6 +159,7 @@ for chunk in pd.read_csv('tweets.csv', chunksize=10):
 # Print the populated dictionary
 print(counts_dict)
 
+# 16
 
 # Define count_entries()
 def count_entries(csv_file, c_size, colname):

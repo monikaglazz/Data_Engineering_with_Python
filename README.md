@@ -25,8 +25,7 @@ If there is no link for the course name that means I haven't started it yet.
 * 🔖 [Writing Efficient Python Code](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Writing%20Efficient%20Python%20Code)
   * 🏁 [Python Data Science Toolbox (Part 1)](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Writing%20Efficient%20Python%20Code/Python%20Data%20Science%20Toolbox%20(Part%201))
   * 🏁 [Python Data Science Toolbox (Part 2)](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Writing%20Efficient%20Python%20Code/Python%20Data%20Science%20Toolbox%20(Part%202))
-  * 🔖 Data Types for Data Science in Python
-  * Writing Efficient Python Code
+  * 🏁 [Data Types for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Writing%20Efficient%20Python%20Code/Data%20Types%20for%20Data%20Science%20in%20Python)
 * Writing Functions in Python
 * Introduction to Shell
 * Data Processing in Shell

@@ -1,3 +1,8 @@
+# Import pandas as pd
+import pandas as pd
+
+# 1
+
 # Definition of countries and capital
 countries = ['spain', 'france', 'germany', 'norway']
 capitals = ['madrid', 'paris', 'berlin', 'oslo']
@@ -8,11 +13,15 @@ europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin', 'norway': 'osl
 # Print europe
 print(europe)
 
+# 3
+
 # Print out the keys in europe
 print(europe.keys())
 
 # Print out value that belongs to key 'norway'
 print(europe['norway'])
+
+# 4
 
 # Add italy to europe
 europe['italy'] = 'rome'
@@ -26,11 +35,15 @@ europe['poland'] = 'warsaw'
 # Print europe
 print(europe)
 
+# 5
+
 # Update capital of germany
 europe['germany'] = 'berlin'
 
 # Remove australia
 del(europe['australia'])
+
+# 6
 
 # Print out the capital of France
 print(europe['france']['capital'])
@@ -41,18 +54,19 @@ data = {'capital': 'rome', 'population' : 59.83}
 # Add data to europe under key 'italy'
 europe['italy'] = data
 
+# 7
+
 # Pre-defined lists
 names = ['United States', 'Australia', 'Japan', 'India', 'Russia', 'Morocco', 'Egypt']
 dr =  [True, False, False, False, True, True, True]
 cpc = [809, 731, 588, 18, 200, 70, 45]
 
-# Import pandas as pd
-import pandas as pd
-
 # Create dictionary my_dict with three key:value pairs: my_dict
 my_dict = {'country':names,
             'drives_right':dr,
             'cars_per_cap':cpc}
+
+# 8
 
 # Build a DataFrame cars from my_dict: cars
 cars = pd.DataFrame(my_dict)
@@ -67,11 +81,17 @@ row_labels = ['US', 'AUS', 'JPN', 'IN', 'RU', 'MOR', 'EG']
 # Specify row labels of cars
 cars.index = row_labels
 
+# 9
+
 # Import the cars.csv data: cars
 cars = pd.read_csv('cars.csv')
 
+# 10
+
 # Fix import by including index_col
 cars = pd.read_csv('cars.csv', index_col = 0)
+
+# 11
 
 # Print out country column as Pandas Series
 print(cars['country'])
@@ -82,11 +102,15 @@ print(cars[['country']])
 # Print out DataFrame with country and drives_right columns
 print(cars[['country', 'drives_right']])
 
+# 12
+
 # Print out first 3 observations
 print(cars[0:3])
 
 # Print out fourth, fifth and sixth observation
 print(cars[3:6])
+
+# 13
 
 # Print out observation for Japan
 print(cars.loc['JPN'])
@@ -94,11 +118,15 @@ print(cars.loc['JPN'])
 # Print out observations for Australia and Egypt
 print(cars.iloc[[1,6]])
 
+# 14
+
 # Print out drives_right value of Morocco
 print(cars.loc['MOR', 'drives_right'])
 
 # Print sub-DataFrame
 print(cars.loc[['RU', 'MOR'], ['country', 'drives_right']])
+
+# 15
 
 # Print out drives_right column as Series
 print(cars.loc[:, 'drives_right'])

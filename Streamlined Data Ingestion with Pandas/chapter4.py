@@ -3,11 +3,17 @@ import pandas as pd
 import requests
 from pandas.io.json import json_normalize
 
+# 1
+
 # Load the daily report to a dataframe
 pop_in_shelters = pd.read_json('dhs_daily_report.json')
 
 # View summary stats about pop_in_shelters
 print(pop_in_shelters.describe())
+
+
+
+# 2
 
 try:
     # Load the JSON with orient specified
@@ -23,6 +29,9 @@ try:
 except ValueError:
     print("pandas could not parse the JSON.")
 
+
+
+# 3
 
 headers = {'Authorization': 'Bearer mhmt'}
 params = {'term': 'cafe', 'location': 'NYC'}
@@ -44,6 +53,9 @@ cafes = pd.DataFrame(data['businesses'])
 print(cafes.dtypes)
 
 
+
+# 4
+
 # Isolate the JSON data from the API response
 data = response.json()
 
@@ -54,6 +66,9 @@ cafes = json_normalize(data["businesses"],
 # View data
 print(cafes.head())
 
+
+
+# 5
 
 # Flatten businesses records and load other business attributes
 flat_cafes = json_normalize(data["businesses"],
@@ -71,6 +86,9 @@ flat_cafes = json_normalize(data["businesses"],
 print(flat_cafes.head())
 
 
+
+# 6
+
 # Add an offset parameter to get cafes 51-100
 params = {"term": "cafe",
           "location": "NYC",
@@ -87,6 +105,9 @@ cafes = top_50_cafes.append(next_50_cafes, ignore_index=True)
 # Print shape of cafes
 print(cafes.shape)
 
+
+
+# 7
 
 # Merge crosswalk into cafes on their zip code fields
 cafes_with_pumas = cafes.merge(

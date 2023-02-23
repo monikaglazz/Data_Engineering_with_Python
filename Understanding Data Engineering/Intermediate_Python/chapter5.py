@@ -3,11 +3,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 np.random.seed(123)
 
+
+# 1
+
 # Starting step
 step = 50
 
 # Roll the dice
 dice = np.random.randint(1, 7)
+
+# 2
 
 # Finish the control construct
 if dice <= 2:
@@ -21,6 +26,7 @@ else:
 print(dice)
 print(step)
 
+# 3
 
 random_walk = [0]
 
@@ -41,6 +47,7 @@ for x in range(100):
 # Plot random_walk
 plt.plot(random_walk)
 
+# 4
 
 # Initialize all_walks (don't change this line)
 all_walks = []

@@ -3,17 +3,31 @@ import pandas as pd
 
 #### FLAT FILES ####
 
+# 1
+
 # Read the CSV and assign it to the variable data
 data = pd.read_csv("vt_tax_data_2016.csv")
 
+
+
+# 2
+
 # Load TSV using the sep keyword argument to set delimiter
 data = pd.read_csv('vt_tax_data_2016.tsv', sep = '\t')
+
+
+
+# 3
 
 # Create list of columns to use
 cols = ['zipcode', 'agi_stub', 'mars1', 'MARS2', 'NUMDEP']
 
 # Create dataframe from csv using only selected columns
 data = pd.read_csv("vt_tax_data_2016.csv", usecols = cols)
+
+
+
+# 4
 
 # Create dataframe of first 500 rows with labeled columns
 vt_data_first500 = pd.read_csv("vt_tax_data_2016.csv", nrows=500)
@@ -29,11 +43,19 @@ vt_data_next500 = pd.read_csv("vt_tax_data_2016.csv",
 
 #### ERRORS AND MISSING DATA ####
 
+
+
+# 5
+
 # Load csv with no additional arguments
 data = pd.read_csv("vt_tax_data_2016.csv")
 
 # Print the data types
 print(data.dtypes)
+
+
+
+# 6
 
 # Create dict specifying data types for agi_stub and zipcode
 data_types = {"agi_stub" : "category",
@@ -41,6 +63,10 @@ data_types = {"agi_stub" : "category",
 
 # Load csv using dtype to set correct data types
 data = pd.read_csv("vt_tax_data_2016.csv", dtype = data_types)
+
+
+
+# 7
 
 # Create dict specifying that 0s in zipcode are NA values
 null_values = {"zipcode" : 0}
@@ -52,6 +78,9 @@ data = pd.read_csv("vt_tax_data_2016.csv",
 # View rows with NA ZIP codes
 print(data[data.zipcode.isna()])
 
+
+
+# 8
 
 # Handling corrupted data
 try:

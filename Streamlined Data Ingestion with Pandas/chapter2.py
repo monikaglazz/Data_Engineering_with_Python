@@ -8,8 +8,14 @@ import matplotlib as plt
 #### SPREADSHEETS ####
 
 
+# 1
+
 # Read spreadsheet and assign it to survey_responses
 survey_responses = pd.read_excel('fcc_survey.xlsx')
+
+
+
+# 2
 
 # Create string of lettered columns to load
 col_string = 'AD,AW:BA' 
@@ -19,13 +25,25 @@ survey_responses2 = pd.read_excel("fcc_survey_headers.xlsx",
                         usecols = col_string, 
                         skiprows = 2)
 
+
+
+# 3
+
 # Create df from second worksheet by referencing its position
 responses_2017 = pd.read_excel("fcc_survey.xlsx",
                                sheet_name = 1)
 
+
+
+# 4
+
 # Create df from second worksheet by referencing its name
 responses_2017 = pd.read_excel("fcc_survey.xlsx",
                                sheet_name = '2017')
+
+
+
+# 5
 
 # Load both the 2016 and 2017 sheets by name
 all_survey_data = pd.read_excel("fcc_survey.xlsx",
@@ -39,6 +57,9 @@ all_survey_data = pd.read_excel("fcc_survey.xlsx",
 all_survey_data = pd.read_excel("fcc_survey.xlsx",
                                 sheet_name = None)
 
+
+
+# 6
 
 # All sheets have been read into the ordered dictionary responses, 
 # where sheet names are keys and dataframes are values
@@ -55,6 +76,8 @@ for df in responses.values():
   all_responses = all_responses.append(df)
 
 
+
+# 7
 
 # Create string of lettered columns to load
 cols = 'AP,AH,AI,AK,AM'
@@ -76,6 +99,10 @@ survey_data = pd.read_excel("fcc_survey_subset.xlsx",
 # View financial burdens by Boolean group
 print(survey_data.groupby('HasDebt').sum())
 
+
+
+# 8
+
 # Set dtype to load appropriate column(s) as Boolean data
 survey_data = pd.read_excel("fcc_survey.xlsx", 
                             usecols = cols, 
@@ -85,6 +112,10 @@ survey_data = pd.read_excel("fcc_survey.xlsx",
 
 # View financial burdens by Boolean group
 print(survey_data.groupby('HasDebt').sum())
+
+
+
+# 9
 
 # Load file with Yes as a True value and No as a False value
 survey_subset = pd.read_excel("fcc_survey.xlsx",
@@ -96,6 +127,9 @@ survey_subset = pd.read_excel("fcc_survey.xlsx",
 
 
 
+
+# 10
+
 # Load file, with Part1StartTime parsed as datetime data
 survey_data = pd.read_excel("fcc_survey.xlsx",
                             parse_dates=["Part1StartTime"])
@@ -103,10 +137,12 @@ survey_data = pd.read_excel("fcc_survey.xlsx",
 # Print first few values of Part1StartTime
 print(survey_data.Part1StartTime.head())
 
+
+
+# 11
+
 # Create dict of columns to combine into new datetime column
 datetime_cols = {"Part2Start": ['Part2StartDate','Part2StartTime']}
-
-
 
 # Load file, supplying the dict to parse_dates
 survey_data = pd.read_excel("fcc_survey_dts.xlsx",
@@ -115,6 +151,9 @@ survey_data = pd.read_excel("fcc_survey_dts.xlsx",
 # View summary statistics about Part2Start
 print(survey_data.Part2Start.describe())
 
+
+
+# 12
 
 # Parse datetimes and assign result back to Part2EndTime
 survey_data["Part2EndTime"] = pd.to_datetime(survey_data["Part2EndTime"],

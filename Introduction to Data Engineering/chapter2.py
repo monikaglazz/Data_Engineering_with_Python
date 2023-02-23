@@ -5,6 +5,8 @@ from multiprocessing import Pool
 import numpy as np
 from pyspark.sql import SparkSession
 
+# 1
+
 connection_uri = "postgresql://repl:password@localhost:5432/pagila"
 db_engine = sqlalchemy.create_engine(connection_uri)
 
@@ -20,6 +22,9 @@ print(data.head(3))
 # Show the info of the DataFrame
 print(data.info())
 
+
+# 2
+
 # Complete the SELECT statement
 data = pd.read_sql("""
 SELECT * FROM "Customer"
@@ -30,9 +35,10 @@ ON "Order"."customer_id"="Customer"."id"
 # Show the id column of data
 print(data.id)
 
+
+# 3
+
 # Function to apply a function over multiple cores
-
-
 @print_timing
 def parallel_apply(apply_func, groups, nb_cores):
     with Pool(nb_cores) as p:
@@ -89,6 +95,8 @@ parallel_apply(take_mean_age, athlete_events.groupby('Year'), 2)
 parallel_apply(take_mean_age, athlete_events.groupby('Year'), 4)
 
 
+# 4
+
 # Set the number of partitions
 athlete_events_dask = dd.from_pandas(athlete_events, npartitions=4)
 
@@ -100,6 +108,9 @@ athlete_events_spark = spark.createDataFrame(athlete_events)
 # Print the type of athlete_events_spark
 print(type(athlete_events_spark))
 
+
+# 5
+
 # Print the schema of athlete_events_spark
 print(athlete_events_spark.printSchema())
 
@@ -109,6 +120,8 @@ print(athlete_events_spark.groupBy('Year').mean('Age'))
 # Group by the Year, and find the mean Age
 print(athlete_events_spark.groupBy('Year').mean('Age').show())
 
+
+# 6
 
 # Create the DAG object
 dag = DAG(dag_id="car_factory_simulation",

@@ -1,9 +1,9 @@
 # Import pandas
 import pandas as pd
 
+# 1
+
 # Define shout with the parameter, word
-
-
 def shout(word):
     """Return a string with three exclamation marks"""
     # Concatenate the strings: shout_word
@@ -19,9 +19,9 @@ yell = shout('congratulations')
 # Print yell
 print(yell)
 
+# 2
+
 # Define shout_all with parameters word1 and word2
-
-
 def shout_all(word1, word2):
 
     # Concatenate word1 with '!!!': shout1
@@ -44,6 +44,7 @@ yell1, yell2 = shout_all('congratulations', 'you')
 print(yell1)
 print(yell2)
 
+# 3
 
 # Import Twitter data as DataFrame: df
 df = pd.read_csv('tweets.csv')
@@ -67,6 +68,7 @@ for entry in col:
 # Print the populated dictionary
 print(langs_count)
 
+# 4
 
 # Define count_entries()
 def count_entries(df, col_name):

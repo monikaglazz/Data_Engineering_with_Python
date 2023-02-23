@@ -1,7 +1,8 @@
 # Import reduce from functools
 from functools import reduce
-
 import pandas as pd
+
+# 1
 
 # Define echo_word as a lambda function: echo_word
 echo_word = (lambda word1, echo: word1*echo)
@@ -11,6 +12,8 @@ result = echo_word('hey', 5)
 
 # Print result
 print(result)
+
+# 2
 
 # Create a list of strings: spells
 spells = ["protego", "accio", "expecto patronum", "legilimens"]
@@ -23,6 +26,8 @@ shout_spells_list = list(shout_spells)
 
 # Print the result
 print(shout_spells_list)
+
+# 3
 
 # Create a list of strings: fellowship
 fellowship = ['frodo', 'samwise', 'merry', 'pippin',
@@ -38,6 +43,8 @@ result_list = list(result)
 print(result_list)
 
 
+# 4
+
 # Create a list of strings: stark
 stark = ['robb', 'sansa', 'arya', 'brandon', 'rickon']
 
@@ -47,9 +54,9 @@ result = reduce(lambda item1, item2: item1 + item2, stark)
 # Print the result
 print(result)
 
+# 5
+
 # Define shout_echo
-
-
 def shout_echo(word1, echo=1):
     """Concatenate echo copies of word1 and three
     exclamation marks at the end of the string."""
@@ -76,6 +83,7 @@ def shout_echo(word1, echo=1):
 # Call shout_echo
 shout_echo("particle", echo="accelerator")
 
+# 6
 
 # Define shout_echo
 def shout_echo2(word1, echo=1):
@@ -99,6 +107,8 @@ def shout_echo2(word1, echo=1):
 # Call shout_echo
 shout_echo2("particle", echo=5)
 
+# 7
+
 # Import Twitter data as DataFrame: df
 df = pd.read_csv('tweets.csv')
 
@@ -112,6 +122,7 @@ res_list = list(result)
 for tweet in res_list:
     print(tweet)
 
+# 8
 
 # Define count_entries()
 def count_entries(df, col_name='lang'):

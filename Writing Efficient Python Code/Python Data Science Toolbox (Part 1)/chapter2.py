@@ -1,5 +1,7 @@
 import pandas as pd
 
+# 1
+
 # Create a string: team
 team = "teen titans"
 
@@ -21,6 +23,8 @@ change_team()
 # Print team
 print(team)
 
+# 2
+
 # Define three_shouts
 def three_shouts(word1, word2, word3):
     """Returns a tuple of strings
@@ -37,6 +41,7 @@ def three_shouts(word1, word2, word3):
 # Call three_shouts() and print
 print(three_shouts('a', 'b', 'c'))
 
+# 3
 
 # Define echo
 def echo(n):
@@ -59,6 +64,8 @@ thrice = echo(3)
 
 # Call twice() and thrice() then print
 print(twice('hello'), thrice('hello'))
+
+# 4
 
 # Define echo_shout()
 def echo_shout(word):
@@ -87,6 +94,9 @@ def echo_shout(word):
 
 # Call function echo_shout() with argument 'hello'
 echo_shout('hello')
+
+
+# 5
 
 # Define shout_echo
 def shout_echo(word1, echo = 1, intense = False):
@@ -117,6 +127,8 @@ big_no_echo = shout_echo('Hey', intense=True)
 print(with_big_echo)
 print(big_no_echo)
 
+# 6
+
 # Define gibberish
 def gibberish(*args):
     """Concatenate strings in *args together."""
@@ -141,6 +153,8 @@ many_words = gibberish("luke", "leia", "han", "obi", "darth")
 print(one_word)
 print(many_words)
 
+# 7
+
 # Define report_status
 def report_status(**kwargs):
     """Print out the status of a movie character."""
@@ -159,6 +173,8 @@ report_status(name='luke', affiliation = 'jedi', status = 'missing')
 
 # Second call to report_status()
 report_status(name='anakin', affiliation='sith lord', status='deceased')
+
+# 8
 
 # Define count_entries()
 def count_entries(df, *args):

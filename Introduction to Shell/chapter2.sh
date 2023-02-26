@@ -30,8 +30,9 @@ ls -R -F ~
 man head
 
 # get columns from file
-# select columns 2 through 5 and columns 8, using comma as the separator". 
-# cut uses -f (meaning "fields") to specify columns and -d (meaning "delimiter") to specify the separator.
+# select columns 2 through 5 and columns 8, using comma as the separator".
+# -f (meaning "fields") to specify columns
+# -d (meaning "delimiter") to specify the separator.
 
 cut -f 2-5,8 -d , values.csv
 

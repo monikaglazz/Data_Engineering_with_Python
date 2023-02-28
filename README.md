@@ -51,3 +51,19 @@ If there is no link for the course name that means I haven't started it yet.
 * Python (i.a.: numpy, matplotlib, pandas)
 * SQL: MySQL, PostgreSQL
 * Shell
+
+## 🏅 All my statements of accomplishment
+* [Understanding Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/certificate.pdf)
+  * [Introduction to Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/Introduction_to_Python/certificate.pdf)
+  * [Intermediate Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/Intermediate_Python/certificate.pdf)
+  * [Introduction to SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/Introduction_to_SQL/certificate.pdf)
+  * [Intermediate SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/Intermediate_SQL/certificate.pdf)
+* [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Data%20Engineering/certificate.pdf)
+* [Streamlined Data Ingestion with Pandas](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Streamlined%20Data%20Ingestion%20with%20Pandas/certificate.pdf)
+* [Writing Efficient Python Code](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Efficient%20Python%20Code/certificate.pdf)
+  * [Python Data Science Toolbox (Part 1)](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Efficient%20Python%20Code/Python%20Data%20Science%20Toolbox%20(Part%201)/certificate.pdf)
+  * [Python Data Science Toolbox (Part 2)](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Efficient%20Python%20Code/Python%20Data%20Science%20Toolbox%20(Part%202)/certificate.pdf)
+  * [Data Types for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Efficient%20Python%20Code/Data%20Types%20for%20Data%20Science%20in%20Python/certificate.pdf)
+* [Writing Functions in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Functions%20in%20Python/certificate.pdf)
+* [Introduction to Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Shell/certificate.pdf)
+* [Data Processing in Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Data%20Processing%20in%20Shell/certificate.pdf)

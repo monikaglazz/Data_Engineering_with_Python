@@ -1,0 +1,4 @@
+Model Name: Random Forest
+Accuracy: 96
+F1: 0.89
+Date: 2019-12-01

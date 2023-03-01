@@ -1,0 +1,4 @@
+Model Name: KNN
+Accuracy: 89
+F1: 0.87
+Date: 2019-12-01

@@ -29,7 +29,7 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Writing Functions in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Writing%20Functions%20in%20Python)
 * 🏁 [Introduction to Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Shell)
 * 🏁 [Data Processing in Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Data%20Processing%20in%20Shell)
-* 🔖 Introduction to Bash Scripting
+* 🔖 [Introduction to Bash Scripting](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Bash%20Scripting)
 * Unit Testing for Data Science in Python
 * Object-Oriented Programming with Python
 * Introduction to Airflow in Python

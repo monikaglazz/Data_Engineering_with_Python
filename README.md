@@ -31,8 +31,8 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Data Processing in Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Data%20Processing%20in%20Shell)
 * 🏁 [Introduction to Bash Scripting](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Bash%20Scripting)
 * 🏁 [Unit Testing for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Unit%20Testing%20for%20Data%20Science%20in%20Python)
-* 🔖 [Object-Oriented Programming with Python]
-* Introduction to Airflow in Python
+* 🏁 [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Object-Oriented%20Programming%20with%20Python)
+* 🔖 Introduction to Airflow in Python
 * Introduction to PySpark
 * Introduction to AWS Boto in Python
 * Introduction to Relational Databases in SQL
@@ -51,6 +51,7 @@ If there is no link for the course name that means I haven't started it yet.
 * Python (i.a.: numpy, matplotlib, pandas)
 * SQL: MySQL, PostgreSQL
 * Shell
+* Bash
 
 ## 🏅 All my statements of accomplishment
 * [Understanding Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/certificate.pdf)
@@ -67,6 +68,6 @@ If there is no link for the course name that means I haven't started it yet.
 * [Writing Functions in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Functions%20in%20Python/certificate.pdf)
 * [Introduction to Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Shell/certificate.pdf)
 * [Data Processing in Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Data%20Processing%20in%20Shell/certificate.pdf)
-* [Introduction to Bash Scripting]()
-* [Unit Testing for Data Science in Python]()
-* [Object-Oriented Programming with Python]()
+* [Introduction to Bash Scripting](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Bash%20Scripting/certificate.pdf)
+* [Unit Testing for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Unit%20Testing%20for%20Data%20Science%20in%20Python/certificate.pdf)
+* [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Object-Oriented%20Programming%20with%20Python/certificate.pdf)

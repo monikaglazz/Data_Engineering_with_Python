@@ -50,6 +50,8 @@ If there is no link for the course name that means I haven't started it yet.
 ## 📒 Currently known technologies
 * Python (i.a.: numpy, matplotlib, pandas)
 * SQL: MySQL, PostgreSQL
+* Apache Airflow
+* Apache Spark (PySpark)
 * Shell
 * Bash
 

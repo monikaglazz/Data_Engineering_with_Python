@@ -32,9 +32,9 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Introduction to Bash Scripting](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Bash%20Scripting)
 * 🏁 [Unit Testing for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Unit%20Testing%20for%20Data%20Science%20in%20Python)
 * 🏁 [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Object-Oriented%20Programming%20with%20Python)
-* 🔖 Introduction to Airflow in Python
-* Introduction to PySpark
-* Introduction to AWS Boto in Python
+* 🏁 [Introduction to Airflow in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Airflow%20in%20Python)
+* 🏁 [Introduction to PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20PySpark)
+* 🔖 Introduction to AWS Boto in Python
 * Introduction to Relational Databases in SQL
 * Database Design
 * Introduction to Scala
@@ -71,3 +71,5 @@ If there is no link for the course name that means I haven't started it yet.
 * [Introduction to Bash Scripting](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Bash%20Scripting/certificate.pdf)
 * [Unit Testing for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Unit%20Testing%20for%20Data%20Science%20in%20Python/certificate.pdf)
 * [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Object-Oriented%20Programming%20with%20Python/certificate.pdf)
+* [Introduction to Airflow in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Airflow%20in%20Python/certificate.pdf)
+* [Introduction to PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20PySpark/certificate.pdf)

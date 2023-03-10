@@ -34,7 +34,7 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Object-Oriented%20Programming%20with%20Python)
 * 🏁 [Introduction to Airflow in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Airflow%20in%20Python)
 * 🏁 [Introduction to PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20PySpark)
-* 🔖 Introduction to AWS Boto in Python
+* 🔖 [Introduction to AWS Boto in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20AWS%20Boto%20in%20Python)
 * Introduction to Relational Databases in SQL
 * Database Design
 * Introduction to Scala

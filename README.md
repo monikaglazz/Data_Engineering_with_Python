@@ -34,9 +34,9 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Object-Oriented%20Programming%20with%20Python)
 * 🏁 [Introduction to Airflow in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Airflow%20in%20Python)
 * 🏁 [Introduction to PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20PySpark)
-* 🔖 [Introduction to AWS Boto in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20AWS%20Boto%20in%20Python)
-* Introduction to Relational Databases in SQL
-* Database Design
+* 🏁 [Introduction to AWS Boto in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20AWS%20Boto%20in%20Python)
+* 🏁 [Introduction to Relational Databases in SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Relational%20Databases%20in%20SQL)
+* 🔖 [Database Design](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Database%20Design)
 * Introduction to Scala
 * Big Data Fundamentals with PySpark
 * Clearing Data with PySpark
@@ -50,6 +50,7 @@ If there is no link for the course name that means I haven't started it yet.
 ## 📒 Currently known technologies
 * Python (i.a.: numpy, matplotlib, pandas)
 * SQL: MySQL, PostgreSQL
+* AWS (AWS Boto)
 * Apache Airflow
 * Apache Spark (PySpark)
 * Shell
@@ -75,3 +76,5 @@ If there is no link for the course name that means I haven't started it yet.
 * [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Object-Oriented%20Programming%20with%20Python/certificate.pdf)
 * [Introduction to Airflow in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Airflow%20in%20Python/certificate.pdf)
 * [Introduction to PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20PySpark/certificate.pdf)
+* [Introduction to AWS Boto in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20AWS%20Boto%20in%20Python)
+* [Introduction to Relational Databases in SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Relational%20Databases%20in%20SQL/certificate.pdf)

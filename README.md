@@ -35,6 +35,8 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Introduction to Airflow in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Airflow%20in%20Python)
 * 🏁 [Introduction to PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20PySpark)
 * 🏁 [Introduction to AWS Boto in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20AWS%20Boto%20in%20Python)
+  * 🏁 [AWS Cloud Concepts](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/AWS%20Cloud%20Concepts_certificate.pdf)
+  * 🏁 [Understanding Cloud Computing](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/Understanding%20Cloud%20Computing_certificate.pdf)
 * 🏁 [Introduction to Relational Databases in SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Relational%20Databases%20in%20SQL)
 * 🔖 [Database Design](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Database%20Design)
 * Introduction to Scala
@@ -76,5 +78,7 @@ If there is no link for the course name that means I haven't started it yet.
 * [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Object-Oriented%20Programming%20with%20Python/certificate.pdf)
 * [Introduction to Airflow in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Airflow%20in%20Python/certificate.pdf)
 * [Introduction to PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20PySpark/certificate.pdf)
-* [Introduction to AWS Boto in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/certificate.pdf)
+* [Introduction to AWS Boto in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/Introduction%20to%20AWS%20Boto%20in%20Python_certificate.pdf)
+  * [AWS Cloud Concepts](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/AWS%20Cloud%20Concepts_certificate.pdf)
+  * [Understanding Cloud Computing](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/Understanding%20Cloud%20Computing_certificate.pdf)
 * [Introduction to Relational Databases in SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Relational%20Databases%20in%20SQL/certificate.pdf)

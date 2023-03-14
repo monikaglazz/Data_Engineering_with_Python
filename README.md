@@ -3,6 +3,8 @@
 
 Most of them are based on the tasks from the ['Career Track: Data Engineer with Python'](https://www.datacamp.com/tracks/data-engineer-with-python) from www.datacamp.com
 
+If I have completed the course listed below, it means that you can find a confirmation certificate in the corresponding folder.
+
 Labels:
 
 🏁 - course finished
@@ -61,29 +63,3 @@ If there is no link for the course name that means I haven't started it yet.
 * Apache Spark (PySpark)
 * Shell
 * Bash
-
-## 🏅 All my statements of accomplishment
-* [Understanding Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/certificate.pdf)
-  * [Introduction to Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/Introduction_to_Python/certificate.pdf)
-  * [Intermediate Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/Intermediate_Python/certificate.pdf)
-  * [Introduction to SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/Introduction_to_SQL/certificate.pdf)
-  * [Intermediate SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Understanding%20Data%20Engineering/Intermediate_SQL/certificate.pdf)
-* [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Data%20Engineering/certificate.pdf)
-* [Streamlined Data Ingestion with Pandas](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Streamlined%20Data%20Ingestion%20with%20Pandas/certificate.pdf)
-* [Writing Efficient Python Code](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Efficient%20Python%20Code/certificate.pdf)
-  * [Python Data Science Toolbox (Part 1)](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Efficient%20Python%20Code/Python%20Data%20Science%20Toolbox%20(Part%201)/certificate.pdf)
-  * [Python Data Science Toolbox (Part 2)](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Efficient%20Python%20Code/Python%20Data%20Science%20Toolbox%20(Part%202)/certificate.pdf)
-  * [Data Types for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Efficient%20Python%20Code/Data%20Types%20for%20Data%20Science%20in%20Python/certificate.pdf)
-* [Writing Functions in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Writing%20Functions%20in%20Python/certificate.pdf)
-* [Introduction to Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Shell/certificate.pdf)
-* [Data Processing in Shell](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Data%20Processing%20in%20Shell/certificate.pdf)
-* [Introduction to Bash Scripting](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Bash%20Scripting/certificate.pdf)
-* [Unit Testing for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Unit%20Testing%20for%20Data%20Science%20in%20Python/certificate.pdf)
-* [Object-Oriented Programming with Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Object-Oriented%20Programming%20with%20Python/certificate.pdf)
-* [Introduction to Airflow in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Airflow%20in%20Python/certificate.pdf)
-* [Introduction to PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20PySpark/certificate.pdf)
-* [Introduction to AWS Boto in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/Introduction%20to%20AWS%20Boto%20in%20Python_certificate.pdf)
-  * [AWS Cloud Concepts](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/AWS%20Cloud%20Concepts_certificate.pdf)
-  * [Understanding Cloud Computing](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20AWS%20Boto%20in%20Python/Understanding%20Cloud%20Computing_certificate.pdf)
-* [Introduction to Relational Databases in SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Introduction%20to%20Relational%20Databases%20in%20SQL/certificate.pdf)
-* [Database Design](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Database%20Design/certificate.pdf)

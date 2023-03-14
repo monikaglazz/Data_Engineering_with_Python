@@ -18,7 +18,8 @@ If there is no link for the course name that means I haven't started it yet.
 ## 🧮 More DataCamp stuff
 [Sign Up to DataCamp Here!](https://www.datacamp.com/users/sign_up)
 
-## 🎮 List of Courses in 'Career Track: Data Engineer with Python'
+## 📚 List of all courses
+### 🎮 Courses in 'Career Track: Data Engineer with Python'
 * 🏁 [Understanding Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering)
 * 🏁 [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
 * 🏁 [Streamlined Data Ingestion with Pandas](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Streamlined%20Data%20Ingestion%20with%20Pandas)
@@ -39,7 +40,7 @@ If there is no link for the course name that means I haven't started it yet.
 * Clearing Data with PySpark
 * Introduction to MangoDB in Python
 
-## ➕ Additional courses
+### ➕ Additional courses
 * 🏁 [Introduction to Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Introduction_to_Python)
 * 🏁 [Intermediate Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_Python)
 * 🏁 [Introduction to SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering/Intermediate_SQL)

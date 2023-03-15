@@ -1,5 +1,7 @@
-# ignore all .log files
+# ignore all .log and .DS_Store files
 *.log
+*.DS_Store
 
-# ignore all files in any directory named .vscode
+# ignore all files in any directory named .vscode and .DS_Store
 .vscode/
+

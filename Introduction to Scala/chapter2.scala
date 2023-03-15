@@ -28,7 +28,7 @@ hands(0) = tenClubs + fourDiamonds
 hands(1) = nineSpades + nineHearts
 
 // Initialize the third player's hand in the array
-hands(3) = twoClubs + threeSpades
+hands(2) = twoClubs + threeSpades
 
 
 // ex 4 "An array, all at once"

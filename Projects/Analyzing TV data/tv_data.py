@@ -55,7 +55,8 @@ print(super_bowls[super_bowls['difference_pts'] >= 35])
 
 # ## 5. Do blowouts translate to lost viewers?
 
-# Join game and TV data, filtering out SB I because it was split over two networks
+# Join game and TV data, filtering out SB I because it was split over two
+# networks
 games_tv = pd.merge(tv[tv['super_bowl'] > 1], super_bowls, on='super_bowl')
 
 # Import seaborn
@@ -89,13 +90,15 @@ plt.tight_layout()
 
 # ## 7. Halftime shows weren't always this great
 
-# Display all halftime musicians for Super Bowls up to and including Super Bowl XXVII
+# Display all halftime musicians for Super Bowls up to and including
+# Super Bowl XXVII
 halftime_musicians[halftime_musicians['super_bowl'] <= 27]
 
 
 # ## 8. Who has the most halftime show appearances?
 
-# Count halftime show appearances for each musician and sort them from most to least
+# Count halftime show appearances for each musician and sort them from most to
+# least
 halftime_appearances = halftime_musicians.groupby(
     'musician').count()['super_bowl'].reset_index()
 halftime_appearances = halftime_appearances.sort_values(

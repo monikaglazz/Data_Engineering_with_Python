@@ -8,7 +8,7 @@ sc = SparkContext(appName="MyApp")
 print("The version of Spark Context in the PySpark shell is", sc.version)
 
 # Print the Python version of SparkContext
-print("The Python version of Spark Context in the PySpark shell is", 
+print("The Python version of Spark Context in the PySpark shell is",
       sc.pythonVer)
 
 # Print the master of SparkContext

@@ -1,7 +1,8 @@
 import numpy as np
+
 # 1
 
-names = ['Jerry', 'Kramer', 'Elaine', 'George', 'Newman']
+names = ["Jerry", "Kramer", "Elaine", "George", "Newman"]
 
 # Print the list created using the Non-Pythonic approach
 i = 0
@@ -76,7 +77,7 @@ print(names_uppercase)
 
 # 5
 
-nums = np.array([[1,  2,  3,  4,  5], [6,  7,  8,  9, 10]])
+nums = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 
 # Print second row of nums
 print(nums[1, :])
@@ -110,7 +111,8 @@ def welcome_guest(guest_and_time):
     guest = guest_and_time[0]
     arrival_time = guest_and_time[1]
     welcome_string = "Welcome to Festivus {}... You're {} min late.".format(
-        guest, arrival_time)
+        guest, arrival_time
+    )
     return welcome_string
 
 
@@ -128,4 +130,4 @@ guest_arrivals = [(names[i], time) for i, time in enumerate(new_times)]
 welcome_map = map(welcome_guest, guest_arrivals)
 
 guest_welcomes = [*welcome_map]
-print(*guest_welcomes, sep='\n')
+print(*guest_welcomes, sep="\n")

@@ -19,7 +19,7 @@ secondary_types = ['Ice', 'nan', 'nan', 'nan', 'Flying', 'Rock', 'nan', 'nan', '
                    'Ice', 'nan', 'Poison', 'nan', 'Bug', 'nan', 'nan', 'nan', 'Flying', 'Flying',
                    'Poison', 'Bug', 'nan', 'Rock', 'Flying', 'nan', 'Ice', 'nan', 'nan', 'nan',
                    'Fairy', 'Fairy', 'nan', 'Psychic', 'nan', 'Water', 'Ground', 'nan', 'Steel', 'nan',
-                    'nan', 'Flying', 'Poison', 'nan', 'Psychic', 'nan', 'Poison', 'nan']
+                   'nan', 'Flying', 'Poison', 'nan', 'Psychic', 'nan', 'Poison', 'nan']
 
 
 # Combine names and primary_types
@@ -179,7 +179,8 @@ for name, gen in zip(names, generations):
         gen1_gen2_name_lengths_loop.append(poke_tuple)
 
 # Collect Pokémon that belong to generation 1 or generation 2
-gen1_gen2_pokemon = [name for name, gen in zip(names, generations) if gen < 3]
+gen1_gen2_pokemon = [name for name,
+                     gen in zip(names, generations) if gen < 3]
 
 # Create a map object that stores the name lengths
 name_lengths_map = map(len, gen1_gen2_pokemon)

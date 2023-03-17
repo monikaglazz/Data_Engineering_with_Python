@@ -36,7 +36,7 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Introduction to Relational Databases in SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Relational%20Databases%20in%20SQL)
 * 🏁 [Database Design](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Database%20Design)
 * 🏁 [Introduction to Scala](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Scala)
-* 🔖 Big Data Fundamentals with PySpark
+* 🔖 [Big Data Fundamentals with PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Big%20Data%20Fundamentals%20with%20PySpark)
 * Clearing Data with PySpark
 * Introduction to MangoDB in Python
 

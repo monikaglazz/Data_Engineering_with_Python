@@ -101,7 +101,7 @@ for k, v in total.items():
 # ex 9 "Create a base RDD and transform it"
 # Create a baseRDD from the file path
 baseRDD = sc.textFile(
-    "/Data_Engineering_with_Python/Big Data Fundamentals with PySpark/Complete_Shakespeare.txt")
+    "Complete_Shakespeare.txt")
 
 # Split the lines of baseRDD into words
 splitRDD = baseRDD.flatMap(lambda x: x.split())

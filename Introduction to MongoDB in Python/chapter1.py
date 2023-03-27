@@ -1,6 +1,19 @@
 from pymongo import MongoClient
+import requests
 
 client = MongoClient()
+
+db = client["nobel"]
+
+for collection_name in ["prizes", "laureates"]:
+    # collect the data from the API
+    response = requests.get(
+        "http://api.nobelprize.org/v1/{}.json".
+        format(collection_name[:-1]))
+    # convert the data to json
+    documents = response.json()[collection_name]
+    # Create collections on the fly
+    db[collection_name].insert_many(documents)
 
 # ex 1 "Listing Databases and Collections"
 # Save a list of names of the databases managed by client

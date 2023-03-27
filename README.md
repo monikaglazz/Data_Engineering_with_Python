@@ -20,6 +20,8 @@ If there is no link for the course name that means I haven't started it yet.
 
 ## 📚  List of all courses
 ### 🎮  Courses in 'Career Track: Data Engineer with Python'
+* 🏁['Career Track: Data Engineer with Python'](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Data_Engineer_Career_Track_certificate.pdf)
+
 * 🏁 [Understanding Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering)
 * 🏁 [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
 * 🏁 [Streamlined Data Ingestion with Pandas](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Streamlined%20Data%20Ingestion%20with%20Pandas)
@@ -36,9 +38,9 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Introduction to Relational Databases in SQL](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Relational%20Databases%20in%20SQL)
 * 🏁 [Database Design](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Database%20Design)
 * 🏁 [Introduction to Scala](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Scala)
-* 🔖 [Big Data Fundamentals with PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Big%20Data%20Fundamentals%20with%20PySpark)
-* Clearing Data with PySpark
-* Introduction to MangoDB in Python
+* 🏁 [Big Data Fundamentals with PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Big%20Data%20Fundamentals%20with%20PySpark)
+* 🏁 [Clearing Data with PySpark](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Cleaning%20Data%20with%20PySpark)
+* 🏁 [Introduction to MangoDB in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20MongoDB%20in%20Python)
 
 ### ➕  Additional courses DataCamp
 * 🏁 [Introduction to Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Additional%20Courses/Introduction_to_Python)
@@ -50,6 +52,7 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [Data Types for Data Science in Python](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Additional%20Courses/Data%20Types%20for%20Data%20Science%20in%20Python)
 * 🏁 [AWS Cloud Concepts](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Additional%20Courses/AWS%20Cloud%20Concepts_certificate.pdf)
 * 🏁 [Understanding Cloud Computing](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Additional%20Courses/Understanding%20Cloud%20Computing_certificate.pdf)
+* 🏁 [NoSQL Concepts](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Additional%20Courses/NoSQL%20Concepts.pdf)
 
 ### ➕  Additional courses Udemy
 * 🏁 [The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert](https://udemy-certificate.s3.amazonaws.com/image/UC-430c70e1-4640-4f99-9cb8-7cf5cc87fe0a.jpg)
@@ -67,6 +70,7 @@ If there is no link for the course name that means I haven't started it yet.
 * Python (i.a.: numpy, matplotlib, pandas) - intermediate
 * SQL: MySQL, PostgreSQL - basic/intermediate
 * AWS (AWS Boto) - basic
+* MangoBD - basics
 * Scala - basic
 * Apache Airflow - basic
 * Apache Spark (PySpark) - basic

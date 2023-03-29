@@ -1,7 +1,9 @@
 # 📈  Data Engineer with Python
 🧠 All tasks I carry out on courses and projects related to Data Engineering.
 
-Most of them are based on the tasks from the ['Career Track: Data Engineer with Python'](https://www.datacamp.com/tracks/data-engineer-with-python) from www.datacamp.com
+Most of them are based on the tasks from the ['Career Track: Data Engineer with Python'](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Track_description.pdf) from www.datacamp.com
+
+['Career Track: Data Engineer with Python' - certificate](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Data_Engineer_Career_Track_certificate.pdf)
 
 If I have completed the course listed below, it means that you can find a confirmation certificate in the corresponding folder.
 
@@ -20,8 +22,6 @@ If there is no link for the course name that means I haven't started it yet.
 
 ## 📚  List of all courses
 ### 🎮  Courses in 'Career Track: Data Engineer with Python'
-* 🏁['Career Track: Data Engineer with Python'](https://github.com/monikaglazz/Data_Engineering_with_Python/blob/main/Data_Engineer_Career_Track_certificate.pdf)
-
 * 🏁 [Understanding Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Understanding%20Data%20Engineering)
 * 🏁 [Introduction to Data Engineering](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Introduction%20to%20Data%20Engineering)
 * 🏁 [Streamlined Data Ingestion with Pandas](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Streamlined%20Data%20Ingestion%20with%20Pandas)

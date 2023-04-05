@@ -13,9 +13,23 @@ Labels:
 
 🔖 - course in progress
 
-If there is no link for the course name that means I haven't started it yet.
-
 ![image](https://user-images.githubusercontent.com/84285130/217212070-2d5affaa-1625-4e45-957f-1ca31098aa4d.png)
+
+## 📈  Projects
+* [Investigating Netflix movies and guest stars in The Office](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Investigating%20Netflix%20movies%20and%20guest%20stars%20in%20The%20Office)
+* [Risk and Returns: The Sharpe Ratio](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Risk%20and%20Returns%3B%20The%20Sharpe%20Ratio)
+* [Analyzing TV data](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Analyzing%20TV%20data)
+
+## 📒 Currently known technologies
+* Python (i.a.: numpy, matplotlib, pandas) - intermediate
+* SQL: MySQL, PostgreSQL - basic/intermediate
+* AWS (AWS Boto) - basic
+* MangoBD - basics
+* Scala - basic
+* Apache Airflow - basic
+* Apache Spark (PySpark) - basic
+* Shell - basic
+* Bash - basic
 
 ## 🧮  More DataCamp stuff
 [Sign Up to DataCamp Here!](https://www.datacamp.com/users/sign_up)
@@ -59,20 +73,3 @@ If there is no link for the course name that means I haven't started it yet.
 * 🏁 [The Modern Python 3 Bootcamp](https://udemy-certificate.s3.amazonaws.com/image/UC-1dd46d62-f25d-41f4-9e1c-15312c6dd5db.jpg)
 * 🏁 [The Git & Github Bootcamp](https://udemy-certificate.s3.amazonaws.com/image/UC-17fee90e-ff7a-47f4-8a74-9f5007b4c9d5.jpg)
 * 🏁 [Python 3 od Podstaw do Eksperta](https://udemy-certificate.s3.amazonaws.com/image/UC-976cc083-524c-4d1a-94fa-338878599ab9.jpg)
-
-## 📈  Projects
-* [Investigating Netflix movies and guest stars in The Office](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Investigating%20Netflix%20movies%20and%20guest%20stars%20in%20The%20Office)
-* [Risk and Returns: The Sharpe Ratio](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Risk%20and%20Returns%3B%20The%20Sharpe%20Ratio)
-* [Analyzing TV data](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Analyzing%20TV%20data)
-
-
-## 📒 Currently known technologies
-* Python (i.a.: numpy, matplotlib, pandas) - intermediate
-* SQL: MySQL, PostgreSQL - basic/intermediate
-* AWS (AWS Boto) - basic
-* MangoBD - basics
-* Scala - basic
-* Apache Airflow - basic
-* Apache Spark (PySpark) - basic
-* Shell - basic
-* Bash - basic

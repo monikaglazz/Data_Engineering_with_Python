@@ -19,6 +19,8 @@ Labels:
 * [Investigating Netflix movies and guest stars in The Office](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Investigating%20Netflix%20movies%20and%20guest%20stars%20in%20The%20Office)
 * [Risk and Returns: The Sharpe Ratio](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Risk%20and%20Returns%3B%20The%20Sharpe%20Ratio)
 * [Analyzing TV data](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Analyzing%20TV%20data)
+* [Design Database for Social Media](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Social%20Media%20Database)
+* [Design Blood Donations Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Blood%20Donations%20Database)
 
 ## 📒 Currently known technologies
 * Python (i.a.: numpy, matplotlib, pandas) - intermediate

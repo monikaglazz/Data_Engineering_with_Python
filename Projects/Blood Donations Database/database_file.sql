@@ -33,7 +33,7 @@ CREATE TABLE medical_history(
     description VARCHAR(500) NOT NULL,
     surgeries VARCHAR(100),
     medications VARCHAR(300),
-    PRIMARY KEY(history_id),
+    PRIMARY KEY(history_id)
 );
 
 CREATE TABLE donor_data (
@@ -46,7 +46,7 @@ CREATE TABLE donor_data (
     phone INT(9) NOT NULL,
     email VARCHAR(50),
     blood_type VARCHAR(5) NOT NULL,
-    medical_history VARCHAR(500) NOT NULL,
+    medical_history INT NOT NULL,
     honorary_blood_donor_status BOOL,
     PRIMARY KEY(donor_id),
     FOREIGN KEY(address_id) REFERENCES address_data(address_id) ON DELETE CASCADE,
@@ -62,3 +62,42 @@ CREATE TABLE donations(
     PRIMARY KEY(donation_id),
     FOREIGN KEY(donor_id) REFERENCES donor_data(donor_id) ON DELETE CASCADE
 );
+
+
+CREATE TABLE medications(
+    medical_hist_id INT NOT NULL,
+    medication_id INT NOT NULL AUTO_INCREMENT,
+    medication_symbol VARCHAR(6) NOT NULL,
+    description VARCHAR(200) NOT NULL,
+    purpose VARCHAR(50) NOT NULL,
+    PRIMARY KEY (medication_id),
+    FOREIGN KEY(medical_hist_id) REFERENCES medical_history(history_id)
+);
+
+
+CREATE TABLE surgeries(
+    medical_hist_id INT NOT NULL,
+    surgery_id INT NOT NULL AUTO_INCREMENT,
+    surgery_name VARCHAR(50),
+    PRIMARY KEY(surgery_id),
+    FOREIGN KEY(medical_hist_id) REFERENCES medical_history(history_id)
+);
+
+
+ALTER TABLE medical_history
+    DROP COLUMN medications,
+    ADD COLUMN medications_id INT;
+  
+
+ALTER TABLE medical_history
+    ADD FOREIGN KEY (medications_id) REFERENCES medications(medical_hist_id) ON DELETE CASCADE;
+  
+
+ALTER TABLE medical_history
+    DROP COLUMN surgeries,
+    ADD COLUMN surgeries_id INT;
+  
+
+ALTER TABLE medical_history
+    ADD FOREIGN KEY (surgeries_id) REFERENCES surgeries(medical_hist_id) ON DELETE CASCADE;
+

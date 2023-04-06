@@ -65,39 +65,46 @@ CREATE TABLE donations(
 
 
 CREATE TABLE medications(
-    medical_hist_id INT NOT NULL,
     medication_id INT NOT NULL AUTO_INCREMENT,
     medication_symbol VARCHAR(6) NOT NULL,
     description VARCHAR(200) NOT NULL,
     purpose VARCHAR(50) NOT NULL,
-    PRIMARY KEY (medication_id),
-    FOREIGN KEY(medical_hist_id) REFERENCES medical_history(history_id)
+    PRIMARY KEY (medication_id)
 );
 
 
 CREATE TABLE surgeries(
-    medical_hist_id INT NOT NULL,
     surgery_id INT NOT NULL AUTO_INCREMENT,
     surgery_name VARCHAR(50),
-    PRIMARY KEY(surgery_id),
-    FOREIGN KEY(medical_hist_id) REFERENCES medical_history(history_id)
+    PRIMARY KEY(surgery_id)
 );
 
 
 ALTER TABLE medical_history
-    DROP COLUMN medications,
-    ADD COLUMN medications_id INT;
+    DROP COLUMN medications;
   
 
 ALTER TABLE medical_history
-    ADD FOREIGN KEY (medications_id) REFERENCES medications(medical_hist_id) ON DELETE CASCADE;
+    DROP COLUMN surgeries;
   
 
-ALTER TABLE medical_history
-    DROP COLUMN surgeries,
-    ADD COLUMN surgeries_id INT;
-  
+CREATE TABLE patients_medications(
+    patients_medications_id INT NOT NULL AUTO_INCREMENT,
+    medications_id INT NOT NULL,
+    medical_hist_id INT NOT NULL,
+    PRIMARY KEY(patients_medications_id),
+    FOREIGN KEY(medications_id) REFERENCES medications(medication_id) ON DELETE CASCADE,
+    FOREIGN KEY(medical_hist_id) REFERENCES medical_history(history_id) ON DELETE CASCADE
+);
 
-ALTER TABLE medical_history
-    ADD FOREIGN KEY (surgeries_id) REFERENCES surgeries(medical_hist_id) ON DELETE CASCADE;
+
+CREATE TABLE patients_surgeries(
+    patients_medications_id INT NOT NULL AUTO_INCREMENT,
+    surgeries_id INT NOT NULL,
+    medical_hist_id INT NOT NULL,
+    PRIMARY KEY(patients_medications_id),
+    FOREIGN KEY(surgeries_id) REFERENCES surgeries(surgery_id) ON DELETE CASCADE,
+    FOREIGN KEY(medical_hist_id) REFERENCES medical_history(history_id) ON DELETE CASCADE
+);
+
 

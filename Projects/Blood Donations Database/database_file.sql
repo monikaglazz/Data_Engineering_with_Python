@@ -13,7 +13,7 @@ CREATE TABLE city_data (
     city_name VARCHAR(50),
     country_id INT,
     PRIMARY KEY(city_id),
-    FOREIGN KEY(country_id) REFERENCES country_data(country_id)
+    FOREIGN KEY(country_id) REFERENCES country_data(country_id) ON DELETE CASCADE
 );
 
 
@@ -24,9 +24,17 @@ CREATE TABLE address_data (
     apartment_number INT,
     city_id INT,
     PRIMARY KEY(address_id),
-    FOREIGN KEY(city_id) REFERENCES city_data(city_id)
+    FOREIGN KEY(city_id) REFERENCES city_data(city_id) ON DELETE CASCADE
 );
 
+CREATE TABLE medical_history(
+    history_id INT NOT NULL AUTO_INCREMENT,
+    event_date DATE,
+    description VARCHAR(500) NOT NULL,
+    surgeries VARCHAR(100),
+    medications VARCHAR(300),
+    PRIMARY KEY(history_id),
+);
 
 CREATE TABLE donor_data (
     donor_id INT NOT NULL AUTO_INCREMENT,
@@ -41,8 +49,10 @@ CREATE TABLE donor_data (
     medical_history VARCHAR(500) NOT NULL,
     honorary_blood_donor_status BOOL,
     PRIMARY KEY(donor_id),
-    FOREIGN KEY(address_id) REFERENCES address_data(address_id)
+    FOREIGN KEY(address_id) REFERENCES address_data(address_id) ON DELETE CASCADE,
+    FOREIGN KEY(medical_history) REFERENCES medical_history(history_id) ON DELETE CASCADE
 );
+
 
 CREATE TABLE donations(
     donation_id INT NOT NULL AUTO_INCREMENT,
@@ -50,5 +60,5 @@ CREATE TABLE donations(
     blood_amount_l DECIMAL(4,3),
     donor_id INT,
     PRIMARY KEY(donation_id),
-    FOREIGN KEY(donor_id) REFERENCES donor_data(donor_id)
+    FOREIGN KEY(donor_id) REFERENCES donor_data(donor_id) ON DELETE CASCADE
 );

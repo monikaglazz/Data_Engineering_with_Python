@@ -1,4 +1,7 @@
 USE blood_donations_database;
+
+
+-- Insert data to country_data table
 INSERT INTO
   country_data (country_name)
 VALUES
@@ -138,6 +141,7 @@ VALUES
   ('Panama');
   
   
+-- Insert data to medications table
 INSERT INTO medications (medication_name, description, purpose)
 VALUES 
     ('Paracetamol', 'Pain reliever', 'Nervous system'),
@@ -182,6 +186,7 @@ VALUES
     ('Simvastatin', 'Statin', 'High cholesterol');
     
 
+-- -- Insert data to city_data table
 INSERT INTO city_data (city_name, country_id) VALUES
     ('Kabul', 1),
     ('Herat', 1),
@@ -198,7 +203,7 @@ INSERT INTO city_data (city_name, country_id) VALUES
     ('Luanda', 5),
     ('Huambo', 5),
     ('Lobito', 5),
-    ('St. John’s', 6),
+    ('St. Johnbs', 6),
     ('All Saints', 6),
     ('Liberta', 6),
     ('Buenos Aires', 7),
@@ -252,8 +257,8 @@ INSERT INTO city_data (city_name, country_id) VALUES
     ('Gaborone', 23),
     ('Francistown', 23),
     ('Molepolole', 23),
-    ('Brasília', 24),
-    ('São Paulo', 24),
+    ('BrasC-lia', 24),
+    ('SC#o Paulo', 24),
     ('Rio de Janeiro', 24),
     ('Bandar Seri Begawan', 25),
     ('Kuala Belait', 25),
@@ -276,6 +281,7 @@ INSERT INTO city_data (city_name, country_id) VALUES
     ('Yaounde', 31);
     
 
+-- Insert data to address_data table
 INSERT INTO address_data (street_name, house_number, apartment_number, city_id) VALUES
     ('123 Main St', 4, NULL, 1),
     ('456 Oak St', 10, 3, 2),
@@ -309,7 +315,7 @@ INSERT INTO address_data (street_name, house_number, apartment_number, city_id) 
     ('333 Maplelane Ln', 7, NULL, 30);
     
     
-
+-- Insert data to donor_data table
 INSERT INTO donor_data (name, surname, birth_date, gender, address_id, phone, email, blood_type, honorary_blood_donor_status) VALUES
     ('John', 'Doe', '1990-01-01', 'Male', 1, 123456789, 'john.doe@example.com', 'A+', true),
     ('Jane', 'Smith', '1985-03-15', 'Female', 2, 987654321, 'jane.smith@example.com', 'B-', false),
@@ -331,6 +337,7 @@ INSERT INTO donor_data (name, surname, birth_date, gender, address_id, phone, em
     ('Samantha', 'Wright', '1990-02-11', 'Female', 18, 888999000, 'samantha.wright@example.com', 'B-', false);
     
     
+-- Insert data to donations table
 INSERT INTO donations (donation_date, blood_amount_l, donor_id) VALUES
     ('2022-01-01 10:00:00', 0.5, 1),
     ('2022-02-03 14:30:00', 0.4, 1),
@@ -363,7 +370,7 @@ INSERT INTO donations (donation_date, blood_amount_l, donor_id) VALUES
     ('2022-05-15 15:45:00', 0.3, 10),
     ('2022-06-18 11:30:00', 0.4, 10);
     
-    
+-- Insert data to surgeries table
 INSERT INTO surgeries (surgery_name) VALUES
     ('heart bypass surgery'),
     ('knee replacement surgery'),
@@ -395,7 +402,8 @@ INSERT INTO surgeries (surgery_name) VALUES
     ('thyroidectomy'),
     ('vasectomy');
     
-    
+
+-- Insert data to patients_medications table
 INSERT INTO patients_medications (donor_id, medication_id)
 VALUES 
     (1, 1), (1, 2), (1, 3), (2, 4), (2, 5), (2, 6), (2, 7),
@@ -405,6 +413,7 @@ VALUES
     (13, 29), (14, 30);
     
     
+-- Insert data to patients_surgeries table
 INSERT INTO patients_surgeries (donor_id, surgery_id, surgery_date) VALUES
     (1, 5, '2022-01-01'),
     (1, 10, '2022-02-15'),

@@ -2,12 +2,15 @@ CREATE DATABASE blood_donations_database;
 
 USE blood_donations_database;
 
+-- Create table country_data
 CREATE TABLE country_data (
     country_id INT NOT NULL AUTO_INCREMENT,
     country_name VARCHAR(50),
     PRIMARY KEY(country_id)
 );
 
+
+-- Create table city_data
 CREATE TABLE city_data (
     city_id INT NOT NULL AUTO_INCREMENT,
     city_name VARCHAR(50),
@@ -17,6 +20,7 @@ CREATE TABLE city_data (
 );
 
 
+-- Create table address_data
 CREATE TABLE address_data (
     address_id INT NOT NULL AUTO_INCREMENT,
     street_name VARCHAR(50),
@@ -27,7 +31,7 @@ CREATE TABLE address_data (
     FOREIGN KEY(city_id) REFERENCES city_data(city_id) ON DELETE CASCADE
 );
 
-
+-- Create table donor_data
 CREATE TABLE donor_data (
     donor_id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
@@ -43,7 +47,7 @@ CREATE TABLE donor_data (
     FOREIGN KEY(address_id) REFERENCES address_data(address_id) ON DELETE CASCADE
 );
 
-
+-- Create table donations
 CREATE TABLE donations(
     donation_id INT NOT NULL AUTO_INCREMENT,
     donation_date DATETIME NOT NULL,
@@ -53,7 +57,7 @@ CREATE TABLE donations(
     FOREIGN KEY(donor_id) REFERENCES donor_data(donor_id) ON DELETE CASCADE
 );
 
-
+-- Create table medications
 CREATE TABLE medications(
     medication_id INT NOT NULL AUTO_INCREMENT,
     medication_name VARCHAR(100) NOT NULL UNIQUE,
@@ -62,7 +66,7 @@ CREATE TABLE medications(
     PRIMARY KEY (medication_id)
 );
 
-
+-- Create table surgeries
 CREATE TABLE surgeries(
     surgery_id INT NOT NULL AUTO_INCREMENT,
     surgery_name VARCHAR(50) UNIQUE,
@@ -70,7 +74,7 @@ CREATE TABLE surgeries(
 );
 
   
-
+-- Create table patients_medications
 CREATE TABLE patients_medications(
     donor_id INT NOT NULL,
     medication_id INT NOT NULL,
@@ -79,7 +83,7 @@ CREATE TABLE patients_medications(
     FOREIGN KEY (medication_id) REFERENCES medications(medication_id) ON DELETE CASCADE
 );
 
-
+-- Create table patients_surgeries
 CREATE TABLE patients_surgeries(
     donor_id INT NOT NULL,
     surgery_id INT NOT NULL,
@@ -88,5 +92,3 @@ CREATE TABLE patients_surgeries(
     FOREIGN KEY (donor_id) REFERENCES donor_data(donor_id) ON DELETE CASCADE,
     FOREIGN KEY (surgery_id) REFERENCES surgeries(surgery_id) ON DELETE CASCADE
 );
-
-

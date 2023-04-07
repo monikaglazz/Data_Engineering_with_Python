@@ -1,5 +1,6 @@
 USE shop_database;
 
+-- Insert data into country_data table
 INSERT INTO country_data (country_name) VALUES
     ('United States'),
     ('United Kingdom'),
@@ -22,6 +23,8 @@ INSERT INTO country_data (country_name) VALUES
     ('Ghana'),
     ('Ethiopia');
 
+
+-- Insert data into city_data table
 INSERT INTO city_data (city_name, country_id) VALUES
     ('New York', 1),
     ('Los Angeles', 1),
@@ -43,7 +46,9 @@ INSERT INTO city_data (city_name, country_id) VALUES
     ('Cairo', 17),
     ('Nairobi', 18),
     ('Accra', 19);
-
+    
+    
+-- Insert data into address_data table
 INSERT INTO address_data (street_name, house_number, apartment_number, city_id) VALUES
     ('123 Main St', 1, 101, 1),
     ('456 Oak Ave', 2, NULL, 2),
@@ -103,7 +108,7 @@ VALUES
   (9012345678901234, 49);
 
     
-    
+-- Insert data into payment_options table
 INSERT INTO payment_options(payment_name, description) VALUES 
     ('Credit Card', 'Pay with your credit card online.'),
     ('PayPal', 'Pay with PayPal.'),
@@ -111,6 +116,8 @@ INSERT INTO payment_options(payment_name, description) VALUES
     ('Cash on Delivery', 'Pay with cash when your order is delivered.'),
     ('Bitcoin', 'Pay with Bitcoin cryptocurrency.');
 
+
+-- Insert data into shipping_options table
 INSERT INTO shipping_options(shipping_name) VALUES 
     ('Standard Shipping'),
     ('Express Shipping'),
@@ -155,7 +162,8 @@ VALUES ('Men\'s Clothing'),
     ('Costumes'), 
     ('Vintage Clothing');
     
-    
+
+-- Insert data into producents table
 INSERT INTO producents (producent_name)
 VALUES
     ('Nike'),
@@ -169,6 +177,8 @@ VALUES
     ('Converse'),
     ('Fila');
 
+
+-- Insert data into products table
 INSERT INTO products (product_name, product_description, producent_id, product_category, product_price)
 VALUES
     ('Air Max 90', 'A classic running shoe with a unique design', 1, 1, 119.99),

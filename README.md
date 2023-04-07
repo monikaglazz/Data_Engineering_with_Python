@@ -21,6 +21,7 @@ Labels:
 * [Analyzing TV data](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Analyzing%20TV%20data)
 * [Design and Analyze Database for Social Media](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Social%20Media%20Database)
 * [Design Blood Donations Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Blood%20Donations%20Database)
+* [Design Online Shop Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Online%20Shop%20Database)
 
 ## 📒 Currently known technologies
 * Python (i.a.: numpy, matplotlib, pandas) - intermediate

@@ -22,6 +22,7 @@ Labels:
 * [Design and Analyze Database for Social Media](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Social%20Media%20Database)
 * [Design Blood Donations Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Blood%20Donations%20Database)
 * [Design Online Shop Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Online%20Shop%20Database)
+* [Design Colledge Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Colledge%20Database)
 
 ## 📒 Currently known technologies
 * Python (i.a.: numpy, matplotlib, pandas) - intermediate

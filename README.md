@@ -26,9 +26,9 @@ Labels:
 
 ## 📒 Currently known technologies
 * Python (i.a.: numpy, matplotlib, pandas) - intermediate
-* SQL: MySQL, PostgreSQL - basic/intermediate
+* SQL: MySQL, PostgreSQL - intermediate, basic
 * AWS (AWS Boto) - basic
-* MangoBD - basics
+* MangoBD - basic
 * Scala - basic
 * Apache Airflow - basic
 * Apache Spark (PySpark) - basic

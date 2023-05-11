@@ -410,29 +410,37 @@ CREATE TABLE IF NOT EXISTS surgeries_schedule(
 ) AUTO_INCREMENT = 1;
 
 
--- -- create demand_status table
--- CREATE TABLE IF NOT EXISTS demand_status(
---     status_id INT NOT NULL AUTO_INCREMENT,
---     status VARCHAR(50) NOT NULL,
---     PRIMARY KEY(status_id)
--- )AUTO_INCREMENT = 1;
+-- create patients_rooms table
+CREATE TABLE IF NOT EXISTS patients_rooms(
+    id INT NOT NULL AUTO_INCREMENT,
+    patient_id INT NOT NULL,
+    room_id INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(patient_id) REFERENCES patients(patient_id) ON DELETE CASCADE,
+    FOREIGN KEY(room_id) REFERENCES rooms(room_id) ON DELETE CASCADE
+) AUTO_INCREMENT = 1;
 
 
--- -- create suplies_type table
--- CREATE TABLE IF NOT EXISTS suplies_type(
---     sup_type_id INT NOT NULL AUTO_INCREMENT,
---     sup_type VARCHAR(100),
---     PRIMARY KEY(et_id)
--- )AUTO_INCREMENT = 1;
+-- create rooms_to_clean table
+CREATE TABLE IF NOT EXISTS rooms_to_clean(
+    id INT NOT NULL AUTO_INCREMENT,
+    room_id INT NOT NULL,
+    need_cleaning BOOL NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(room_id) REFERENCES rooms(room_id) ON DELETE CASCADE
+) AUTO_INCREMENT = 1;
 
 
--- -- create suplies table
--- CREATE TABLE IF NOT EXISTS suplies(
---     prod_id
---     product 
-    
--- )AUTO_INCREMENT = 1;
-
+-- create equipment_repairs table
+CREATE TABLE IF NOT EXISTS equipment_repairs(
+    id INT NOT NULL AUTO_INCREMENT,
+    equipment_id INT NOT NULL,
+    room_id INT NOT NULL,
+    need_repair BOOL NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(equipment_id) REFERENCES equipment(eq_id) ON DELETE CASCADE,
+    FOREIGN KEY(room_id) REFERENCES rooms(room_id) ON DELETE CASCADE
+) AUTO_INCREMENT = 1;
 
 
 

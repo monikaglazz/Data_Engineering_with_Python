@@ -18,6 +18,7 @@ If I have completed the course listed below, it means that you can find a confir
 * [Design Blood Donations Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Blood%20Donations%20Database)
 * [Design Online Shop Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Online%20Shop%20Database)
 * [Design Colledge Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Colledge%20Database)
+* [Design Hospital Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Hospital%20Database%20System)
 
 ## 📒 Currently known technologies
 * Python (i.a.: numpy, matplotlib, pandas) - intermediate

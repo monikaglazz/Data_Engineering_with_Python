@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="database_file.sql" id="Project-f1e" database="MySql" >
+	<schema name="blood_donations_database" options="blood_donations_database" >
+		<table name="address_data" spec="" >
+			<column name="address_id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="street_name" type="VARCHAR" length="50" jt="12" />
+			<column name="house_number" type="INT" jt="4" />
+			<column name="apartment_number" type="INT" jt="4" />
+			<column name="city_id" type="INT" jt="4" />
+			<index name="pk_address_data" unique="PRIMARY_KEY" >
+				<column name="address_id" />
+			</index>
+			<fk name="fk_address_data city_data" to_schema="blood_donations_database" to_table="city_data" delete_action="cascade" options="" >
+				<fk_column name="city_id" pk="city_id" />
+			</fk>
+		</table>
+		<table name="city_data" spec="" >
+			<column name="city_id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="city_name" type="VARCHAR" length="50" jt="12" />
+			<column name="country_id" type="INT" jt="4" />
+			<index name="pk_city_data" unique="PRIMARY_KEY" >
+				<column name="city_id" />
+			</index>
+			<fk name="fk_city_data country_data" to_schema="blood_donations_database" to_table="country_data" delete_action="cascade" options="" >
+				<fk_column name="country_id" pk="country_id" />
+			</fk>
+		</table>
+		<table name="country_data" spec="" >
+			<column name="country_id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="country_name" type="VARCHAR" length="50" jt="12" />
+			<index name="pk_country_data" unique="PRIMARY_KEY" >
+				<column name="country_id" />
+			</index>
+		</table>
+		<table name="donations" spec="" >
+			<column name="donation_id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="donation_date" type="DATETIME" jt="93" mandatory="y" />
+			<column name="blood_amount_l" type="DECIMAL" length="4" decimal="3" jt="3" />
+			<column name="donor_id" type="INT" jt="4" />
+			<index name="pk_donations" unique="PRIMARY_KEY" >
+				<column name="donation_id" />
+			</index>
+			<fk name="fk_donations donor_data" to_schema="blood_donations_database" to_table="donor_data" delete_action="cascade" options="" >
+				<fk_column name="donor_id" pk="donor_id" />
+			</fk>
+		</table>
+		<table name="donor_data" spec="" >
+			<column name="donor_id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="name" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<column name="surname" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<column name="birth_date" type="DATE" jt="91" mandatory="y" />
+			<column name="gender" type="VARCHAR" length="20" jt="12" />
+			<column name="address_id" type="INT" jt="4" />
+			<column name="phone" type="INT" length="9" jt="4" mandatory="y" />
+			<column name="email" type="VARCHAR" length="50" jt="12" />
+			<column name="blood_type" type="VARCHAR" length="5" jt="12" mandatory="y" />
+			<column name="honorary_blood_donor_status" type="BOOLEAN" jt="16" />
+			<index name="pk_donor_data" unique="PRIMARY_KEY" >
+				<column name="donor_id" />
+			</index>
+			<fk name="fk_donor_data address_data" to_schema="blood_donations_database" to_table="address_data" delete_action="cascade" options="" >
+				<fk_column name="address_id" pk="address_id" />
+			</fk>
+		</table>
+		<table name="medications" spec="" >
+			<column name="medication_id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="medication_name" type="VARCHAR" length="100" jt="12" mandatory="y" />
+			<column name="description" type="VARCHAR" length="200" jt="12" mandatory="y" />
+			<column name="purpose" type="VARCHAR" length="50" jt="12" mandatory="y" />
+			<index name="unq_medications_medication_name" unique="UNIQUE_KEY" >
+				<column name="medication_name" />
+			</index>
+			<index name="pk_medications" unique="PRIMARY_KEY" >
+				<column name="medication_id" />
+			</index>
+		</table>
+		<table name="patients_medications" spec="" >
+			<column name="donor_id" type="INT" jt="4" mandatory="y" />
+			<column name="medication_id" type="INT" jt="4" mandatory="y" />
+			<index name="pk_patients_medications" unique="PRIMARY_KEY" >
+				<column name="donor_id" />
+				<column name="medication_id" />
+			</index>
+			<fk name="fk_patients_medications donor_data" to_schema="blood_donations_database" to_table="donor_data" delete_action="cascade" options="" >
+				<fk_column name="donor_id" pk="donor_id" />
+			</fk>
+			<fk name="fk_patients_medications medications" to_schema="blood_donations_database" to_table="medications" delete_action="cascade" options="" >
+				<fk_column name="medication_id" pk="medication_id" />
+			</fk>
+		</table>
+		<table name="patients_surgeries" spec="" >
+			<column name="donor_id" type="INT" jt="4" mandatory="y" />
+			<column name="surgery_id" type="INT" jt="4" mandatory="y" />
+			<column name="surgery_date" type="DATE" jt="91" />
+			<index name="pk_patients_surgeries" unique="PRIMARY_KEY" >
+				<column name="donor_id" />
+				<column name="surgery_id" />
+			</index>
+			<fk name="fk_patients_surgeries donor_data" to_schema="blood_donations_database" to_table="donor_data" delete_action="cascade" options="" >
+				<fk_column name="donor_id" pk="donor_id" />
+			</fk>
+			<fk name="fk_patients_surgeries surgeries" to_schema="blood_donations_database" to_table="surgeries" delete_action="cascade" options="" >
+				<fk_column name="surgery_id" pk="surgery_id" />
+			</fk>
+		</table>
+		<table name="surgeries" spec="" >
+			<column name="surgery_id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="surgery_name" type="VARCHAR" length="50" jt="12" />
+			<index name="unq_surgeries_surgery_name" unique="UNIQUE_KEY" >
+				<column name="surgery_name" />
+			</index>
+			<index name="pk_surgeries" unique="PRIMARY_KEY" >
+				<column name="surgery_id" />
+			</index>
+		</table>
+	</schema>
+	<layout name="Layout" id="Layout-500" show_relation="columns" >
+		<entity schema="blood_donations_database" name="address_data" color="BED3F4" x="1216" y="352" />
+		<entity schema="blood_donations_database" name="city_data" color="BED3F4" x="1216" y="48" />
+		<entity schema="blood_donations_database" name="country_data" color="BED3F4" x="1424" y="48" />
+		<entity schema="blood_donations_database" name="donations" color="BED3F4" x="640" y="144" />
+		<entity schema="blood_donations_database" name="donor_data" color="BED3F4" x="880" y="48" />
+		<entity schema="blood_donations_database" name="medications" color="BED3F4" x="880" y="528" />
+		<entity schema="blood_donations_database" name="patients_medications" color="BED3F4" x="880" y="352" />
+		<entity schema="blood_donations_database" name="patients_surgeries" color="BED3F4" x="640" y="352" />
+		<entity schema="blood_donations_database" name="surgeries" color="BED3F4" x="640" y="544" />
+		<callout x="48" y="176" pointer="Round" >
+			<comment><![CDATA[Add tables to the layout diagram (here) by drag & drop from the Project Tree.
+Drop this callout from its right-click pop-up.]]></comment>
+		</callout>
+	</layout>
+</project>

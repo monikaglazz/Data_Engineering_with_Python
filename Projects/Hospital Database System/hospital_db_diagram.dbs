@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project name="hospital_db2.sql" id="Project-1efb" database="MySql" >
+<project name="hospital_db.sql" id="Project-1313" database="MySql" >
 	<schema name="public" >
 		<table name="appointments_schedule" spec="" >
 			<column name="app_id" type="INT" jt="4" mandatory="y" >
@@ -160,6 +160,24 @@
 			<index name="pk_equipment_producent" unique="PRIMARY_KEY" >
 				<column name="producent_id" />
 			</index>
+			<options><![CDATA[AUTO_INCREMENT = 1]]></options>
+		</table>
+		<table name="equipment_repairs" spec="" >
+			<column name="id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="equipment_id" type="INT" jt="4" mandatory="y" />
+			<column name="room_id" type="INT" jt="4" mandatory="y" />
+			<column name="need_repair" type="BOOLEAN" jt="16" mandatory="y" />
+			<index name="pk_equipment_repairs" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<fk name="fk_equipment_repairs equipment" to_schema="public" to_table="equipment" delete_action="cascade" options="" >
+				<fk_column name="equipment_id" pk="eq_id" />
+			</fk>
+			<fk name="fk_equipment_repairs rooms" to_schema="public" to_table="rooms" delete_action="cascade" options="" >
+				<fk_column name="room_id" pk="room_id" />
+			</fk>
 			<options><![CDATA[AUTO_INCREMENT = 1]]></options>
 		</table>
 		<table name="equipment_type" spec="" >
@@ -405,6 +423,23 @@
 			</fk>
 			<options><![CDATA[AUTO_INCREMENT = 1]]></options>
 		</table>
+		<table name="patients_rooms" spec="" >
+			<column name="id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="patient_id" type="INT" jt="4" mandatory="y" />
+			<column name="room_id" type="INT" jt="4" mandatory="y" />
+			<index name="pk_patients_rooms" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<fk name="fk_patients_rooms patients" to_schema="public" to_table="patients" delete_action="cascade" options="" >
+				<fk_column name="patient_id" pk="patient_id" />
+			</fk>
+			<fk name="fk_patients_rooms rooms" to_schema="public" to_table="rooms" delete_action="cascade" options="" >
+				<fk_column name="room_id" pk="room_id" />
+			</fk>
+			<options><![CDATA[AUTO_INCREMENT = 1]]></options>
+		</table>
 		<table name="responsibilities" spec="" >
 			<column name="function_id" type="INT" jt="4" mandatory="y" >
 				<identity><![CDATA[AUTO_INCREMENT]]></identity>
@@ -460,6 +495,20 @@
 			</fk>
 			<fk name="fk_rooms department" to_schema="public" to_table="department" delete_action="cascade" options="" >
 				<fk_column name="department_id" pk="department_id" />
+			</fk>
+			<options><![CDATA[AUTO_INCREMENT = 1]]></options>
+		</table>
+		<table name="rooms_to_clean" spec="" >
+			<column name="id" type="INT" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTO_INCREMENT]]></identity>
+			</column>
+			<column name="room_id" type="INT" jt="4" mandatory="y" />
+			<column name="need_cleaning" type="BOOLEAN" jt="16" mandatory="y" />
+			<index name="pk_rooms_to_clean" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+			<fk name="fk_rooms_to_clean rooms" to_schema="public" to_table="rooms" delete_action="cascade" options="" >
+				<fk_column name="room_id" pk="room_id" />
 			</fk>
 			<options><![CDATA[AUTO_INCREMENT = 1]]></options>
 		</table>
@@ -652,48 +701,47 @@
 			<options><![CDATA[AUTO_INCREMENT = 1]]></options>
 		</table>
 	</schema>
-	<layout name="Layout" id="Layout-11f1" show_relation="columns" >
-		<entity schema="public" name="appointments_schedule" color="F4DDBE" x="1008" y="288" />
-		<entity schema="public" name="blood_types" color="BED3F4" x="1040" y="1360" />
-		<entity schema="public" name="cities" color="C7F4BE" x="2720" y="64" />
-		<entity schema="public" name="countries" color="C7F4BE" x="2928" y="64" />
-		<entity schema="public" name="date" color="F4DDBE" x="1312" y="336" />
-		<entity schema="public" name="date_month" color="F4DDBE" x="1552" y="832" />
-		<entity schema="public" name="date_year" color="F4DDBE" x="1808" y="832" />
-		<entity schema="public" name="department" color="D1BEF4" x="496" y="1072" />
-		<entity schema="public" name="equipment" color="D1BEF4" x="496" y="1280" />
-		<entity schema="public" name="equipment_producent" color="D1BEF4" x="720" y="1280" />
-		<entity schema="public" name="equipment_type" color="D1BEF4" x="496" y="1472" />
-		<entity schema="public" name="examinations" color="F4DDBE" x="1888" y="336" />
-		<entity schema="public" name="examinations_schedule" color="F4DDBE" x="1264" y="560" />
-		<entity schema="public" name="genders" color="BED3F4" x="1008" y="1072" />
-		<entity schema="public" name="medications" color="BEBEF4" x="2912" y="1344" />
-		<entity schema="public" name="patient_examinations" color="F4DDBE" x="1552" y="336" />
-		<entity schema="public" name="patient_medications" color="BEBEF4" x="2672" y="1344" />
-		<entity schema="public" name="patient_surgeries" color="BEBEF4" x="2416" y="1344" />
-		<entity schema="public" name="patients" color="BED3F4" x="1232" y="1248" />
-		<entity schema="public" name="patients_address" color="BED3F4" x="1440" y="1536" />
-		<entity schema="public" name="patients_discharge" color="F4DDBE" x="1312" y="64" />
-		<entity schema="public" name="patients_doctors" color="BED3F4" x="1216" y="1536" />
-		<entity schema="public" name="patients_nurses" color="BED3F4" x="1440" y="1248" />
-		<entity schema="public" name="responsibilities" color="C7F4BE" x="2720" y="560" />
-		<entity schema="public" name="room_equipment" color="D1BEF4" x="256" y="1280" />
-		<entity schema="public" name="room_type" color="D1BEF4" x="48" y="1280" />
-		<entity schema="public" name="rooms" color="D1BEF4" x="256" y="1072" />
-		<entity schema="public" name="specializations" color="C7F4BE" x="2176" y="192" />
-		<entity schema="public" name="status" color="F4DDBE" x="1552" y="624" />
-		<entity schema="public" name="surgeries" color="BEBEF4" x="2176" y="1344" />
-		<entity schema="public" name="surgeries_schedule" color="BEBEF4" x="2176" y="1072" />
-		<entity schema="public" name="time" color="BEBEF4" x="2416" y="1072" />
-		<entity schema="public" name="time_minute" color="BEBEF4" x="2608" y="1072" />
-		<entity schema="public" name="wing_name" color="D1BEF4" x="752" y="1072" />
-		<entity schema="public" name="workers" color="C7F4BE" x="2448" y="64" />
-		<entity schema="public" name="workers_address" color="C7F4BE" x="2720" y="368" />
-		<entity schema="public" name="workers_responsibilities" color="C7F4BE" x="2448" y="368" />
-		<entity schema="public" name="workers_type" color="C7F4BE" x="2240" y="368" />
-		<callout x="48" y="48" pointer="Round" >
-			<comment><![CDATA[Add tables to the layout diagram (here) by drag & drop from the Project Tree.
-Drop this callout from its right-click pop-up.]]></comment>
-		</callout>
+	<layout name="Layout" id="Layout-175f" show_relation="columns" >
+		<entity schema="public" name="appointments_schedule" color="BED3F4" x="1936" y="560" />
+		<entity schema="public" name="blood_types" color="BED3F4" x="96" y="1136" />
+		<entity schema="public" name="cities" color="C7F4BE" x="1088" y="1344" />
+		<entity schema="public" name="countries" color="C7F4BE" x="1040" y="1536" />
+		<entity schema="public" name="date" color="F4DDBE" x="784" y="240" />
+		<entity schema="public" name="date_month" color="F4DDBE" x="736" y="48" />
+		<entity schema="public" name="date_year" color="F4DDBE" x="512" y="48" />
+		<entity schema="public" name="department" color="D1BEF4" x="2464" y="464" />
+		<entity schema="public" name="equipment" color="C7F4BE" x="2496" y="1024" />
+		<entity schema="public" name="equipment_producent" color="C7F4BE" x="2336" y="1200" />
+		<entity schema="public" name="equipment_repairs" color="C7F4BE" x="2240" y="1024" />
+		<entity schema="public" name="equipment_type" color="C7F4BE" x="2608" y="1216" />
+		<entity schema="public" name="examinations" color="F4DDBE" x="1344" y="160" />
+		<entity schema="public" name="examinations_schedule" color="F4DDBE" x="704" y="464" />
+		<entity schema="public" name="genders" color="BEBEF4" x="112" y="1328" />
+		<entity schema="public" name="medications" color="BED3F4" x="48" y="768" />
+		<entity schema="public" name="patient_examinations" color="F4DDBE" x="1008" y="96" />
+		<entity schema="public" name="patient_medications" color="BED3F4" x="48" y="992" />
+		<entity schema="public" name="patient_surgeries" color="BED3F4" x="560" y="992" />
+		<entity schema="public" name="patients" color="BED3F4" x="320" y="976" />
+		<entity schema="public" name="patients_address" color="BED3F4" x="368" y="1280" />
+		<entity schema="public" name="patients_discharge" color="F4DDBE" x="432" y="208" />
+		<entity schema="public" name="patients_doctors" color="BED3F4" x="288" y="672" />
+		<entity schema="public" name="patients_nurses" color="BED3F4" x="608" y="1168" />
+		<entity schema="public" name="patients_rooms" color="BED3F4" x="80" y="576" />
+		<entity schema="public" name="responsibilities" color="C7F4BE" x="1760" y="1568" />
+		<entity schema="public" name="room_equipment" color="C7F4BE" x="2496" y="832" />
+		<entity schema="public" name="room_type" color="D1BEF4" x="2352" y="336" />
+		<entity schema="public" name="rooms" color="D1BEF4" x="2224" y="464" />
+		<entity schema="public" name="rooms_to_clean" color="D1BEF4" x="2128" y="272" />
+		<entity schema="public" name="specializations" color="C7F4BE" x="1872" y="1296" />
+		<entity schema="public" name="status" color="BED3F4" x="1744" y="832" />
+		<entity schema="public" name="surgeries" color="BED3F4" x="1184" y="736" />
+		<entity schema="public" name="surgeries_schedule" color="BED3F4" x="1440" y="672" />
+		<entity schema="public" name="time" color="BED3F4" x="1712" y="624" />
+		<entity schema="public" name="time_minute" color="BED3F4" x="1664" y="336" />
+		<entity schema="public" name="wing_name" color="D1BEF4" x="2720" y="464" />
+		<entity schema="public" name="workers" color="C7F4BE" x="1488" y="1248" />
+		<entity schema="public" name="workers_address" color="C7F4BE" x="1280" y="1376" />
+		<entity schema="public" name="workers_responsibilities" color="C7F4BE" x="1488" y="1568" />
+		<entity schema="public" name="workers_type" color="C7F4BE" x="1808" y="1408" />
 	</layout>
 </project>

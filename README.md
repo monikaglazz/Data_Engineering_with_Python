@@ -10,16 +10,6 @@ If I have completed the course listed below, it means that you can find a confir
 
 ![image](https://user-images.githubusercontent.com/84285130/217212070-2d5affaa-1625-4e45-957f-1ca31098aa4d.png)
 
-## 📈  Projects
-* [Investigating Netflix movies and guest stars in The Office](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Investigating%20Netflix%20movies%20and%20guest%20stars%20in%20The%20Office)
-* [Risk and Returns: The Sharpe Ratio](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Risk%20and%20Returns%3B%20The%20Sharpe%20Ratio)
-* [Analyzing TV data](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Analyzing%20TV%20data)
-* [Design and Analyze Database for Social Media](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Social%20Media%20Database)
-* [Design Blood Donations Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Blood%20Donations%20Database)
-* [Design Online Shop Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Online%20Shop%20Database)
-* [Design Colledge Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Colledge%20Database)
-* [Design Hospital Database](https://github.com/monikaglazz/Data_Engineering_with_Python/tree/main/Projects/Hospital%20Database%20System)
-
 ## 📒 Currently known technologies
 * Python (i.a.: numpy, matplotlib, pandas) - intermediate
 * SQL: MySQL, PostgreSQL - intermediate, basic
